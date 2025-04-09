@@ -1,0 +1,13 @@
+Sargam is currently pursuing a Master’s in Business Analytics from Santa Clara University,
+building on her previous Master’s in Artificial Intelligence at Idiap Research Institute to 
+deepen her expertise in AI models and data-driven decision-making.
+
+During her time at diap, she worked with Prof. Sebastian Marcel on applying computer vision
+techniques to improve generalization for face-swap deepfake detection. She later joined the 
+Speech Processing group under Prof. Mathew Magimai Doss, exploring emotion recognition from 
+speech using self-supervised learning methods. She has published a research paper at ICASSP 2023 
+and is currently preparing a journal submission based on this work.
+
+Prior to joining Idiap, Sargam received a Bachelor of Technology in Electronics and Communication Engineering
+ from Jayoti Vidyapeeth Women’s University, Jaipur, in 2014. She then worked as a Senior Software Developer 
+ at Capgemini for the Morgan Stanley account, developing end-to-end web-based applications using Java as the core technology.
