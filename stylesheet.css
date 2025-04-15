@@ -143,3 +143,36 @@ name {
 span.highlight {
   background-color: #ffffd0;
 }
+
+#Adding code to add tabs 
+.tab {
+  overflow: hidden;
+  border-bottom: 1px solid #ccc;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.tab button {
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 12px 20px;
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.tab button:hover {
+  background-color: #eee;
+}
+
+.tab button.active {
+  border-bottom: 3px solid #1772d0;
+  font-weight: bold;
+}
+
+.tabcontent {
+  display: none;
+  padding-top: 20px;
+}
