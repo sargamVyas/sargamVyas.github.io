@@ -47,20 +47,17 @@
               <p style="text-align:center">
                 <a href="mailto:svyas2@scu.edu">Email</a> &nbsp/&nbsp
                 <a href="data/Sargam_Vyas_CV.pdf">CV</a> &nbsp/&nbsp
-                <!--<a href="data/ApoorvVyas-bio.txt">Biography</a> &nbsp/&nbsp-->
-                <!--<a href="https://scholar.google.co.in/citations?user=7EoDBR0AAAAJ">Google Scholar</a> &nbsp/&nbsp-->
                 <a href="https://github.com/sargamVyas">Github</a> &nbsp/&nbsp
-                <!--<a href="https://twitter.com/apoorv2904">Twitter</a> &nbsp/&nbsp-->
                 <a href="https://www.linkedin.com/in/sargam-shukla/">LinkedIn</a>
               </p>
               <div class="tab" style="text-align:center">
                 <button class="tablinks" onclick="openTab(event, 'Experience')" id="defaultOpen">Experience</button>
                 <button class="tablinks" onclick="openTab(event, 'Research')">Research</button>
+                <button class="tablinks" onclick="openTab(event, 'Projects')">Projects</button>
                 <button class="tablinks" onclick="openTab(event, 'Volunteer')">Volunteer</button>
               </div>
             </td>
             <td style="padding:2.5%;width:40%;max-width:40%">
-                <!--<a href="images/ApoorvVyas-circle.png"><img-->
               <a href="images/SargamVyas_headshot.JPG"><img
                 style="width:100%;max-width:100%"
                 alt="profile photo"
@@ -71,18 +68,8 @@
           </tr>
         </tbody></table>
 
-        <!--table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tbody>
-            <tr style="padding:0px">
-            <td style="padding-left:2.5%; padding-top:0.5%; width:100%;vertical-align:middle; background-color:#FFFFE0">
-                <p>
-                    Expected gradutation in July 2022. Looking for summer research internship in 2021.
-                </p>
-            </td>
-            </tr>
-          </tbody>
-        </table-->
-        <div id="Research" class="tabcontent" >
+        <!-- Research Tab -->
+        <div id="Research" class="tabcontent">
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tbody>
             <tr>
@@ -112,7 +99,6 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr>
             <td style="padding:20px;width:25%;vertical-align:middle">
-                <!--<img src='images/wav2vec2.JPG' width="200px">-->
             </td>
             <td style="padding-left:20px;width:75%;vertical-align:middle">
               <papertitle>Comparing data-Driven and Handcrafted Features for Dimensional Emotion Recognition
@@ -126,18 +112,17 @@
               <em>ICASSP </em>, 2024
               <br>
               <a href="https://ieeexplore.ieee.org/document/10446134">paper</a>
-              <!--a href="https://github.com/idiap/apam">code</a> /-->
-              <!--a href="https://idiap.ch/~avyas/bib/arxiv-2020-lfmmi.txt">bibtex</a-->
               <p></p>
             </td>
           </tr>
         </tbody></table>
         </div>
-        <!--Adding for experience and volunteer tab-->
+
+        <!-- Experience Tab -->
         <div id="Experience" class="tabcontent" style="display:block;">
           <table style="width:100%;border:0;border-spacing:0;margin:auto;">
             <tr>
-              <td>
+              <td style="padding:20px;">
                 <heading>Experience</heading>
         
                 <p><strong>AI Research Intern and Master Thesis</strong><br>
@@ -163,11 +148,70 @@
             </tr>
           </table>
         </div>
-        
+
+        <!-- Projects Tab -->
+        <div id="Projects" class="tabcontent">
+          <table style="width:100%;border:0;border-spacing:0;margin:auto;">
+            <tr>
+              <td style="padding:20px;">
+                <heading>Projects</heading>
+
+                <!-- Project Card -->
+                <table style="width:100%;border:1px solid #e0e0e0;border-spacing:0;margin-top:16px;margin-bottom:8px;border-collapse:collapse;">
+                  <tr>
+                    <td style="padding:20px;vertical-align:top;">
+
+                      <p style="margin:0 0 4px 0;">
+                        <strong style="font-size:15px;">Historical Reimaginator</strong>
+                        &nbsp;
+                        <a href="https://github.com/sargamVyas/historical-reimaginator" target="_blank" style="font-size:13px;">[GitHub]</a>
+                      </p>
+                      <p style="margin:0 0 10px 0; color:#555; font-size:13px; font-style:italic;">
+                        RAG-powered multi-agent app that reimagines history using a Wikipedia-backed vector knowledge base
+                      </p>
+
+                      <p style="margin:0 0 8px 0; font-size:13.5px;">
+                        Built an end-to-end <strong>Retrieval-Augmented Generation (RAG)</strong> application that explores
+                        alternate history scenarios by combining vector search with a multi-agent AI pipeline.
+                        Given any historical event, the app ingests Wikipedia articles into a
+                        <strong>Pinecone</strong> vector store using OpenAI embeddings, then orchestrates
+                        three specialized <strong>CrewAI</strong> agents — a Historian that retrieves
+                        grounded context via RAG before web search, an Alternate Reality agent for
+                        counterfactual analysis, and a Storyteller that crafts an immersive narrative —
+                        all served through an interactive <strong>Streamlit</strong> UI.
+                      </p>
+
+                      <!-- Pipeline -->
+                      <p style="margin: 12px 0 6px 0; font-size:12px; color:#777; text-transform:uppercase; letter-spacing:0.05em;">Pipeline</p>
+                      <p style="margin:0 0 12px 0; font-size:13px; font-family:monospace; color:#444;">
+                        Wikipedia Ingest &rarr; Pinecone (RAG) &rarr; Historian Agent &rarr; Alt. Reality Agent &rarr; Storyteller Agent &rarr; Streamlit UI
+                      </p>
+
+                      <!-- Tech tags -->
+                      <p style="margin:0; font-size:13px;">
+                        <span style="background:#f0f0f0;padding:2px 8px;margin-right:4px;margin-bottom:4px;display:inline-block;border-radius:2px;">Python</span>
+                        <span style="background:#f0f0f0;padding:2px 8px;margin-right:4px;margin-bottom:4px;display:inline-block;border-radius:2px;">OpenAI API</span>
+                        <span style="background:#f0f0f0;padding:2px 8px;margin-right:4px;margin-bottom:4px;display:inline-block;border-radius:2px;">Pinecone</span>
+                        <span style="background:#f0f0f0;padding:2px 8px;margin-right:4px;margin-bottom:4px;display:inline-block;border-radius:2px;">CrewAI</span>
+                        <span style="background:#f0f0f0;padding:2px 8px;margin-right:4px;margin-bottom:4px;display:inline-block;border-radius:2px;">RAG</span>
+                        <span style="background:#f0f0f0;padding:2px 8px;margin-right:4px;margin-bottom:4px;display:inline-block;border-radius:2px;">Streamlit</span>
+                        <span style="background:#f0f0f0;padding:2px 8px;margin-right:4px;margin-bottom:4px;display:inline-block;border-radius:2px;">LLM Orchestration</span>
+                      </p>
+
+                    </td>
+                  </tr>
+                </table>
+
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <!-- Volunteer Tab -->
         <div id="Volunteer" class="tabcontent">
           <table style="width:100%;border:0;border-spacing:0;margin:auto;">
             <tr>
-              <td>
+              <td style="padding:20px;">
                 <heading>Volunteer</heading>
                 <p>
                   Volunteer teacher with <strong>Project Read</strong> at Redwood City Library since 2023,
@@ -177,6 +221,7 @@
             </tr>
           </table>
         </div>
+
       </td>
     </tr>
   </table>
